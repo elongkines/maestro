@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mycompany.usinggit</groupId>
+  <artifactId>sample-project</artifactId>
+  <packaging>pom</packaging>
+  <version>6.0-SNAPSHOT</version>
+  <name>MaestroDev - Sample Project</name>
+  <url>http://maestrodev.com</url>
+  <scm>
+    <connection>scm:git:https://github.com/elongkines/maestro/raw/master/sampleProject/trunk</connection>
+    <developerConnection>scm:git:https://github.com/elongkines/maestro/raw/master/sampleProject/trunk</developerConnection>
+    <url>https://github.com/elongkines/maestro/raw/master/sampleProject/trunk</url>
+  </scm>
+
+  <build>
+    <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.0.2</version>
+          <configuration>
+            <source>1.5</source>
+            <target>1.5</target>
+          </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <licenses>
+    <license>
+      <name>License Testing</name>
+      <url>http://license.com</url>
+      <distribution>distribution</distribution>
+      <comments>No comment</comments>
+    </license>
+  </licenses>
+
+
+  <distributionManagement>
+    <repository>
+      <id>m3.test.releases</id>
+      <name>Repository Name</name>
+      <url>scp:http://pip.manila.exist.com/archiva/repository/m3.test.releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>m3.test.snapshots</id>
+      <name>Repository Name</name>
+      <url>scp:http://pip.manila.exist.com/archiva/repository/m3.test.snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <modules>
+    <module>sample-project-commons</module>
+    <module>sample-project-core</module>
+    <module>sample-webapp</module>
+  </modules>
+</project>
