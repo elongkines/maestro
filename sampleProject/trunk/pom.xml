@@ -8,8 +8,8 @@
   <name>MaestroDev - Sample Project</name>
   <url>http://maestrodev.com</url>
   <scm>
-    <connection>scm:git:https://github.com/elongkines/maestro/raw/master/sampleProject/trunk</connection>
-    <developerConnection>scm:git:https://github.com/elongkines/maestro/raw/master/sampleProject/trunk</developerConnection>
+    <connection>scm:git:https://github.com/elongkines/maestro.git</connection>
+    <developerConnection>scm:git:https://github.com/elongkines/maestro.git</developerConnection>
     <url>https://github.com/elongkines/maestro/raw/master/sampleProject/trunk</url>
   </scm>
 
